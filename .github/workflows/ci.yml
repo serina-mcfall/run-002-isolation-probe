@@ -1,0 +1,23 @@
+# Deliberately trivial. The Stage 1 V-steps need a check run NAMED `ci`
+# that reaches a conclusion; they need nothing it does. This is NOT a copy
+# of the Run 002 CI workflow, which installs Playwright Chromium under a
+# 25-minute timeout.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    name: ci
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Succeed
+        run: echo "ci fixture ok"
