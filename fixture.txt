@@ -1,2 +1,1 @@
-Minimal fixture file, edited on probe/pr-1 so the Stage 1
-credential V-steps have a pull request with a real diff.
+V10 probe revision.
