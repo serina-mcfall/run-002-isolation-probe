@@ -1,2 +1,1 @@
-Minimal fixture file. PRs in this repository edit this file so a pull
-request has a diff. Its contents carry no meaning.
+Disposable permission-probe revision.
